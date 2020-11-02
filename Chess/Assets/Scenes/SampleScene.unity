@@ -311,8 +311,8 @@ Camera:
   m_GameObject: {fileID: 963194225}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 1, g: 0.48584908, b: 0.48584908, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -369,6 +369,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1275984393}
   - component: {fileID: 1275984392}
+  - component: {fileID: 1275984394}
   m_Layer: 0
   m_Name: Game Board
   m_TagString: Untagged
@@ -388,10 +389,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 443d84f09e161124cb21f04ae386e7b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  white_turn: 1
+  selected_mat: {fileID: 2100000, guid: 7c35f779773b82640a49832985d17ca0, type: 2}
   cell_size: 1
   chess_piecesPref:
-  - {fileID: 7753207727204177185, guid: a0a691e54dd1c8c46a045d9311bb7022, type: 3}
-  - {fileID: 7753424416384732499, guid: 50e7ceb319fe0db4c82fe2d74fc40a73, type: 3}
+  - {fileID: 4647025971614440983, guid: b38979c14f757b6409114cdb9cb71dd5, type: 3}
+  - {fileID: 2363151667181859100, guid: 63f1f872f9bb0dc489582e1981fa7822, type: 3}
+  - {fileID: 3152747329432045516, guid: c00f77a3123a8d741a05534f4254861a, type: 3}
+  - {fileID: 8279586305838732038, guid: 3daabe543e2ec704ab301266e70fe93d, type: 3}
+  - {fileID: 7473331648157001057, guid: 2c51b12ba0696d34aa9364fe7b4b5339, type: 3}
+  - {fileID: 3852781289677355893, guid: 4518652fd91463c4f8411c92a8c441e3, type: 3}
+  - {fileID: 2541167974563432925, guid: ee666df165a265b409dc409c7a2c7fd0, type: 3}
+  - {fileID: 7042742870999584370, guid: 4513ba1fee2aabb4c897512de7913046, type: 3}
+  - {fileID: 7505126341197700717, guid: 5457bdce2668bd143897d26c7b4d8516, type: 3}
+  - {fileID: 5490039118631520538, guid: 779812c698fe02e49bdb3fca7584b07f, type: 3}
+  - {fileID: 787160281910926745, guid: 38c935ed3937721469f8a0a149d33a8d, type: 3}
+  - {fileID: 4053013489176930886, guid: 0e8b6edbf2f92144d856efd2c8144e92, type: 3}
 --- !u!4 &1275984393
 Transform:
   m_ObjectHideFlags: 0
@@ -407,6 +420,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1275984394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1275984391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24edac63d9f025548a0d7abd62419aee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HighlightPref: {fileID: 612388992223567248, guid: 35fb90205604f9041af2bcfc86e2543a, type: 3}
 --- !u!1 &1713391636
 GameObject:
   m_ObjectHideFlags: 0

@@ -2,45 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum Choice
-{
-    WHITE, BLACK
-};
 
-public class Piece 
+public abstract class Piece : MonoBehaviour
 {
-    int x;
-    int y;
-    Choice color = Choice.WHITE;
+    public int current_x { get; set; }
+    public int current_y { get; set; }
+    public bool is_white;
 
-    public Piece(int x, int y, Choice color)
+    public void SetPosition(int x, int y)
     {
-        this.x = x;
-        this.y = y;
-        this.color = color;
+        this.current_x = x;
+        this.current_y = y;
     }
-    public int GetX()
+    public virtual bool[,] canMove()
     {
-        return this.x;
-    }
-    public int GetY()
-    {
-        return this.y;
-    }
-    public void SetX(int _x)
-    {
-        this.x = _x;
-    }
-    public void SetY(int _y)
-    {
-        this.y = _y;
-    }
-    public Choice GetColor()
-    {
-        return this.color;
-    }
-    public void SetColor(Choice _color)
-    {
-        this.color = _color;
+        return new bool[8, 8];
     }
 }
